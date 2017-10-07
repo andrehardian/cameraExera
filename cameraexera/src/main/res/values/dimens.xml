@@ -1,0 +1,95 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_xvhigh">130dp</dimen>
+    <dimen name="margin_vxxhigh">100dp</dimen>
+    <dimen name="margin_vxhigh">90dp</dimen>
+    <dimen name="margin_vhigh">80dp</dimen>
+    <dimen name="margin_high">60dp</dimen>
+    <dimen name="margin_hvigh">50dp</dimen>
+    <dimen name="margin_hvmed">40dp</dimen>
+    <dimen name="margin_hmed">30dp</dimen>
+    <dimen name="margin_hm">25dp</dimen>
+    <dimen name="margin_med">20dp</dimen>
+    <dimen name="margin_smed">10dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_msmall">-15dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_large">60dp</dimen>
+    <dimen name="padding_hm">35dp</dimen>
+    <dimen name="padding_slarge">20dp</dimen>
+    <dimen name="padding_smlarge">15dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_xmsmall">8dp</dimen>
+    <dimen name="padding_xsmall">5dp</dimen>
+    <dimen name="padding_xxsmall">3dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="text_vxxl">72sp</dimen>
+    <dimen name="text_xxl">50sp</dimen>
+    <dimen name="text_xl">32sp</dimen>
+    <dimen name="text_ml">20sp</dimen>
+    <dimen name="text_mls">18sp</dimen>
+    <dimen name="text_m">13sp</dimen>
+    <dimen name="text_smm">16sp</dimen>
+    <dimen name="text_sm">15sp</dimen>
+    <dimen name="text_ms">14sp</dimen>
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="text_xms">10sp</dimen>
+    <dimen name="text_xs">8sp</dimen>
+
+    <!--Custom Background Size-->
+    <dimen name="line">0.5dp</dimen>
+    <dimen name="radius_vxsmall">1dp</dimen>
+    <dimen name="radius_xxxsmall">2dp</dimen>
+    <dimen name="radius_xxsmall">3dp</dimen>
+    <dimen name="radius_xsmall">5dp</dimen>
+    <dimen name="radius_small">10dp</dimen>
+    <dimen name="radius_smedium">20dp</dimen>
+    <dimen name="radius_medium">40dp</dimen>
+    <dimen name="radius_high">60dp</dimen>
+    <dimen name="stroke_small">1dp</dimen>
+    <dimen name="stroke_medium">2dp</dimen>
+    <dimen name="button_green_circle_size">60dp</dimen>
+    <dimen name="button_green_circle_size_small">30dp</dimen>
+    <dimen name="button_custom_width">270dp</dimen>
+    <dimen name="button_custom_height">50dp</dimen>
+    <dimen name="header_size">200dp</dimen>
+    <dimen name="header_size_full">230dp</dimen>
+    <dimen name="more_size">15dp</dimen>
+    <dimen name="circle">15dp</dimen>
+    <dimen name="button_circle">35dp</dimen>
+    <dimen name="size_edittext">40dp</dimen>
+    <dimen name="line_width">70dp</dimen>
+    <dimen name="size_rundown">80dp</dimen>
+
+    <dimen name="heigh_app_menu">150dp</dimen>
+    <dimen name="width_content_tab">42.5dp</dimen>
+    <dimen name="fourty_dimens">40dp</dimen>
+    <dimen name="tab_size">55dp</dimen>
+    <dimen name="eighty_dimens">80dp</dimen>
+    <dimen name="image_splash">200dp</dimen>
+    
+    <dimen name="margin_bttop">16dp</dimen>
+    <dimen name="margin_logotop">18dp</dimen>
+    <dimen name="margin_rlbt">20dp</dimen>
+    <dimen name="margin_bta">21dp</dimen>
+    <dimen name="margin_shut">10dp</dimen>
+    <dimen name="margin_textbt">12dp</dimen>
+    
+    <dimen name="x_size">20dp</dimen>
+    <dimen name="powered_size">109dp</dimen>
+    <dimen name="rotate_width">24dp</dimen>
+    <dimen name="rotate_height">22dp</dimen>
+    <dimen name="flash_width">21dp</dimen>
+    <dimen name="flash_height">28dp</dimen>
+    <dimen name="gallery_width">38dp</dimen>
+    <dimen name="gallery_height">28dp</dimen>
+    <dimen name="shutter_size">50dp</dimen>
+    <dimen name="crop_height">60dp</dimen>
+
+</resources>

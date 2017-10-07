@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_view"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.theartofdev.edmodo.cropper.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.theartofdev.edmodo.cropper.CropImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/close"
+            style="@style/button_x"
+            android:layout_width="@dimen/x_size"
+            android:layout_height="@dimen/x_size"
+            android:background="@drawable/ic_close" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/powered_size"
+                android:layout_height="@dimen/margin_bttop"
+                android:layout_marginTop="@dimen/margin_logotop"
+                android:src="@drawable/typeface_powered_by" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.app.exera.camera.custom.button.CustomButtonBook
+        android:id="@+id/crop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/crop_height"
+        android:textAllCaps="false"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/margin_shut"
+        android:text="@string/crop" />
+</FrameLayout>
