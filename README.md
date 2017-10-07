@@ -49,6 +49,13 @@ Start CameraExera using builder pattern from your activity
 
 ```
 
+or
+
+```
+        startActivityForResult(new Intent(this, CameraExera.class).putExtra(CameraExera.BUNDLE_KEY,
+                new CameraRequired().setWidth(400).setHeight(400).setHideGalery(true)), REQUEST_CODE);
+```
+
 3. get data from `CameraExera` 
 
 ```
