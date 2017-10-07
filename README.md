@@ -42,7 +42,7 @@ Start CameraExera using builder pattern from your activity
         cameraRequired.setHeight(400);
 //        set array index image, if not in array dont fill this
         cameraRequired.setArrayIndex(0);
-//        for disable gallery(old version for hide gallery in camera)
+//        for hide gallery in camera
         cameraRequired.setHideGalery(true);
 
         startActivityForResult(new Intent(this, CameraExera.class).putExtra(CameraExera.BUNDLE_KEY,cameraRequired), REQUEST_CODE);
