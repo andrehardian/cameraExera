@@ -1,6 +1,10 @@
 # cameraExera
 android camera library from laxus exera technology
 
+## Preview
+![1 0 exera camera](https://github.com/andrehardian/cameraExera/blob/master/art/1.0%20Exera%20Camera.png)
+![2 0 exera camera - cut image](https://github.com/andrehardian/cameraExera/blob/master/art/2.0%20Exera%20Camera%20-%20Cut%20Image.png)
+
 ## Usage
 
 ### Include Library
