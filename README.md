@@ -1,6 +1,10 @@
 # cameraExera
 android camera library from laxus exera technology
 
+## Preview
+![1 0 exera camera](https://github.com/andrehardian/cameraExera/blob/master/art/1.0%20Exera%20Camera.png)
+![2 0 exera camera - cut image](https://github.com/andrehardian/cameraExera/blob/master/art/2.0%20Exera%20Camera%20-%20Cut%20Image.png)
+
 ## Usage
 
 ### Include Library
@@ -38,11 +42,18 @@ Start CameraExera using builder pattern from your activity
         cameraRequired.setHeight(400);
 //        set array index image, if not in array dont fill this
         cameraRequired.setArrayIndex(0);
-//        for disable gallery(old version for hide gallery in camera)
+//        for hide gallery in camera
         cameraRequired.setHideGalery(true);
 
         startActivityForResult(new Intent(this, CameraExera.class).putExtra(CameraExera.BUNDLE_KEY,cameraRequired), REQUEST_CODE);
 
+```
+
+or
+
+```
+        startActivityForResult(new Intent(this, CameraExera.class).putExtra(CameraExera.BUNDLE_KEY,
+                new CameraRequired().setWidth(400).setHeight(400).setHideGalery(true)), REQUEST_CODE);
 ```
 
 3. get data from `CameraExera` 
@@ -69,5 +80,4 @@ Start CameraExera using builder pattern from your activity
     }
 ```
 
-## License
-cameraExera by `andrehardian` is licensed under a `Apache License 2.0.`
+cameraExera by [andrehardian](https://github.com/andrehardian) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
