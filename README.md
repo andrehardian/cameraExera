@@ -21,7 +21,7 @@ Add dependencies :
 
 ```
 dependencies {
-     compile 'com.github.andrehardian:cameraExera:1.0.3'
+     compile 'com.github.andrehardian:cameraExera:1.0.4'
 }
 
 ```
