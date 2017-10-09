@@ -70,4 +70,4 @@ Start CameraExera using builder pattern from your activity
 ```
 
 ## License
-cameraExera by andrehardian is licensed under a Apache License 2.0.
+cameraExera by `andrehardian` is licensed under a `Apache License 2.0.`
