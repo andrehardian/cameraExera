@@ -21,6 +21,7 @@ import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ToggleButton;
 
 import com.app.exera.camera.R;
@@ -136,14 +137,9 @@ public class CameraExera extends AppCompatActivity implements CallBackCameraUtil
         showImage.setAspectRatio(SIZE_W, SIZE_H);
         showImage.setGuidelines(CropImageView.Guidelines.ON);
         showImage.setCropShape(CropImageView.CropShape.RECTANGLE);
-        showImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        showImage.setScaleType(CropImageView.ScaleType.CENTER_CROP);
         setParamCrop();
 
-/*
-        galery.setBackground(cameraRequired.isHideGalery() ?
-                getResources().getDrawable(R.drawable.gallery_hover_disabled)
-                : getResources().getDrawable(R.drawable.custom_gallery));
-*/
         galery.setVisibility(cameraRequired.isHideGalery() ? View.GONE : View.VISIBLE);
 
         pickImageChooserIntent = new PickImageChooserIntent(this);
@@ -156,7 +152,7 @@ public class CameraExera extends AppCompatActivity implements CallBackCameraUtil
         Point size = new Point();
         display.getSize(size);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(size.x,size.y);
+        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(size.x,size.y);
         showImage.setLayoutParams(layoutParams);
     }
 
