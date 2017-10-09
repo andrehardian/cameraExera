@@ -25,6 +25,11 @@ dependencies {
 }
 
 ```
+using NoActionBar theme
+`
+Theme.AppCompat.Light.NoActionBar
+`
+
 ### Using activity
 Start CameraExera using builder pattern from your activity
 
