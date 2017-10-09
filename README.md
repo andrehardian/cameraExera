@@ -85,4 +85,12 @@ or
     }
 ```
 
+## Credit
+Almost all of the code for these library projects is based on:
+1. [android image cropper](https://github.com/ArthurHub/Android-Image-Cropper)
+2. [Project Lombok](https://projectlombok.org/)
+3. [Rx Android](https://github.com/ReactiveX/RxAndroid)
+4. [Rx Java](https://github.com/ReactiveX/RxJava)
+
+## License
 cameraExera by [andrehardian](https://github.com/andrehardian) is licensed under a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
