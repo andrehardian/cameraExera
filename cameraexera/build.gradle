@@ -4,13 +4,9 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
-        classpath 'me.tatarka:gradle-retrolambda:3.6.1'
     }
 }
 apply plugin: 'com.android.library'
-apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.andrehardian'
@@ -27,7 +23,7 @@ apt {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         minSdkVersion 17
@@ -66,7 +62,7 @@ dependencies {
 //    compile 'org.androidannotations:androidannotations-api:3.0.1'
     compile 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
     provided 'org.projectlombok:lombok:1.12.6'
-    apt "org.projectlombok:lombok:1.12.6"
+    annotationProcessor "org.projectlombok:lombok:1.12.6"
 
     testCompile 'junit:junit:4.12'
 //    apt 'org.androidannotations:androidannotations:3.0.1'
