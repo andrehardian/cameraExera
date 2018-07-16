@@ -13,6 +13,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -50,6 +51,7 @@ public class CameraExera extends AppCompatActivity implements CallBackCameraUtil
     private ToggleButton flash;
     private Button crop;
     private Button swipe;
+    private ImageView icon;
 
 
     private PermissionMarshmellow permissionMarshmellow;
@@ -94,6 +96,7 @@ public class CameraExera extends AppCompatActivity implements CallBackCameraUtil
         crop = findView(R.id.crop);
         swipe = findView(R.id.swipe);
         flash = findView(R.id.flash);
+        icon = findView(R.id.icon);
 
         cameraPreview.setOnTouchListener((View view, MotionEvent motionEvent) ->
                 cameraPreview(motionEvent));
@@ -171,9 +174,11 @@ public class CameraExera extends AppCompatActivity implements CallBackCameraUtil
         setFlash();
         if (camera != null) {
             camera.setDisplayOrientation(90);
-            cameraPreviewer = new CameraPreview(this, camera, this);
+            DisplayMetrics metrics = getResources().getDisplayMetrics();
+            float ratio = ((float)metrics.heightPixels / (float)metrics.widthPixels);
+            cameraPreviewer = new CameraPreview(this, camera, this).
+                    setDisplay(getWindowManager().getDefaultDisplay());
             cameraPreview.addView(cameraPreviewer);
-
         }
     }
 

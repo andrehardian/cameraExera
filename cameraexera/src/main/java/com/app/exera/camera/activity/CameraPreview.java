@@ -6,6 +6,7 @@ import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.view.Display;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -21,6 +22,12 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private List<Camera.Size> cameraSize;
     private Camera.Size previewSize;
     private final Camera.AutoFocusCallback autoFocus;
+    private Display display;
+
+    public CameraPreview setDisplay(Display display) {
+        this.display = display;
+        return this;
+    }
 
 
     public CameraPreview(Context context, Camera camera, Camera.AutoFocusCallback autoFocus) {
@@ -84,7 +91,14 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
             parameters.setPictureFormat(PixelFormat.JPEG);
 
             try {
-                parameters.setPreviewSize(previewSize.width, previewSize.height);
+                int displayHeight = previewSize.height;
+                int displayWidth = previewSize.width;
+                int ratioHeightDevice = display.getHeight() / 120;
+                if (ratioHeightDevice > 16) {
+                    displayWidth = (width) * (9 + ratioHeightDevice - 16) / ratioHeightDevice;
+                    displayHeight = height;
+                }
+                parameters.setPreviewSize(displayWidth, displayHeight);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -162,6 +176,8 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                 }
             }
         }
+
+
         return optimalSize;
     }
 

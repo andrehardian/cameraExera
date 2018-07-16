@@ -1,99 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@+id/camera_view"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent">
 
-        <FrameLayout
-            android:id="@+id/camera_preview"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1" />
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exit"
+            style="@style/button_x"
+            android:layout_width="@dimen/x_size"
+            android:layout_height="@dimen/x_size"
+            android:background="@drawable/ic_close" />
+
+        <ImageView
+            android:layout_width="@dimen/powered_size"
+            android:layout_height="@dimen/margin_bttop"
+            android:layout_marginTop="@dimen/margin_logotop"
+            android:id="@+id/icon"
+            android:layout_weight="1"
+            android:src="@drawable/typeface_powered_by" />
+
+        <Button
+            android:id="@+id/swipe"
+            style="@style/button_x"
+            android:layout_width="@dimen/rotate_width"
+            android:layout_height="@dimen/rotate_height"
+            android:background="@drawable/custom_rotate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_primary"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/exit"
-                style="@style/button_x"
-                android:layout_width="@dimen/x_size"
-                android:layout_height="@dimen/x_size"
-                android:background="@drawable/ic_close" />
-            <ImageView
-                android:layout_width="@dimen/powered_size"
-                android:layout_weight="1"
-                android:layout_marginTop="@dimen/margin_logotop"
-                android:src="@drawable/typeface_powered_by"
-                android:layout_height="@dimen/margin_bttop" />
-            <Button
-                android:id="@+id/swipe"
-                style="@style/button_x"
-                android:layout_width="@dimen/rotate_width"
-                android:layout_height="@dimen/rotate_height"
-                android:background="@drawable/custom_rotate" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@drawable/bg_primary"
+            style="@style/button_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                style="@style/button_bottom"
-                android:orientation="vertical">
-
-                <ToggleButton
-                    android:id="@+id/flash"
-                    android:layout_width="@dimen/flash_width"
-                    android:layout_height="@dimen/flash_height"
-                    android:layout_gravity="center"
-                    android:background="@drawable/custom_flash"
-                    android:checked="true"
-                    android:textOff=" "
-                    android:textOn=" " />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/capture"
-                    android:layout_marginTop="@dimen/margin_shut"
-                    android:layout_marginBottom="@dimen/margin_shut"
-                    android:layout_width="@dimen/shutter_size"
-                    android:layout_height="@dimen/shutter_size"
-                    android:layout_gravity="center"
-                    android:background="@drawable/custom_shutter" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                style="@style/button_bottom"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/galery"
-                    android:layout_width="@dimen/gallery_width"
-                    android:layout_height="@dimen/gallery_height"
-                    android:layout_gravity="center"
-                    android:background="@drawable/custom_gallery" />
-            </LinearLayout>
+            <ToggleButton
+                android:id="@+id/flash"
+                android:layout_width="@dimen/flash_width"
+                android:layout_height="@dimen/flash_height"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_flash"
+                android:checked="true"
+                android:textOff=" "
+                android:textOn=" " />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    </FrameLayout>
+            <Button
+                android:id="@+id/capture"
+                android:layout_width="@dimen/shutter_size"
+                android:layout_height="@dimen/shutter_size"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_shut"
+                android:layout_marginTop="@dimen/margin_shut"
+                android:background="@drawable/custom_shutter" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/button_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/galery"
+                android:layout_width="@dimen/gallery_width"
+                android:layout_height="@dimen/gallery_height"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_gallery" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
