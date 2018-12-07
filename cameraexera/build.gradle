@@ -61,7 +61,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 //    compile 'org.androidannotations:androidannotations-api:3.0.1'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
-    provided 'org.projectlombok:lombok:1.12.6'
+    compileOnly 'org.projectlombok:lombok:1.12.6'
     annotationProcessor "org.projectlombok:lombok:1.12.6"
 
     testImplementation 'junit:junit:4.12'
